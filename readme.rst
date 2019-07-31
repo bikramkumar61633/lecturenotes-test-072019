@@ -30,8 +30,6 @@ issues, as well as missing features.
 Installation
 ************
 
-
-
 *******
 License
 *******
@@ -42,5 +40,3 @@ agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/so
 *********
 Resources
 *********
-
-
