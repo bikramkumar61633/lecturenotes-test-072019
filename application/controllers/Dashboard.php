@@ -12,4 +12,8 @@ class Dashboard extends MY_Controller
     {
 
     }
+    function test()
+    {
+
+    }
 }

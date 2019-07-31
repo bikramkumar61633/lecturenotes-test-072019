@@ -2,7 +2,7 @@
 CRM in CodeIgniter
 ###################
 
-The project is basic Customer Relationship Management application will help customer support representative to manage their interactions and feedback from the customers to help them serve the customers better in future.
+The project is basic Customer Relationship Management application will help customer support representative to manage their interactions and feedback from the customers to help them serve the customers better in future. This is a test project. This should not use in production.
 
 *******************
 Release Information

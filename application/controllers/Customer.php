@@ -12,4 +12,18 @@ class Customer extends MY_Controller
     {
 
     }
+    /**
+     * new page
+     */
+    function new()
+    {
+
+    }
+    /**
+     * Edit page
+     */
+    function edit($id = 0)
+    {
+
+    }
 }
