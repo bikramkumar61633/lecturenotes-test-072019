@@ -70,18 +70,18 @@ var base_url='<?= base_url(); ?>';
 					</span>
 				</a>
             </li>
-            <li>
+            <!-- <li>
 				<a href="<?= site_url('activities') ?>">
                     <i class="fa fa-file-text-o nav_icon"></i>
 					<span class="nav-text">
 					Activities
 					</span>
 				</a>
-			</li>
+			</li> -->
 		</ul>
 		<ul class="logout">
 			<li>
-			<a href="login.html">
+			<a href="<?= site_url('auth/logout') ?>">
 			<i class="icon-off nav-icon"></i>
 			<span class="nav-text">
 			Logout
@@ -112,10 +112,9 @@ var base_url='<?= base_url(); ?>';
 					<button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
 				</form>
 			</div>
-			<div class="header-right">
+			<!-- <div class="header-right">
 				<div class="profile_details_left">
 					<div class="header-right-left">
-						<!--notifications of menu start -->
 						<ul class="nofitications-dropdown">
 							<li class="dropdown head-dpdn">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i><span class="badge">3</span></a>
@@ -268,7 +267,7 @@ var base_url='<?= base_url(); ?>';
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-			</div>
+			</div> -->
 			<div class="clearfix"> </div>
 		</section>
 		<div class="main-grid">

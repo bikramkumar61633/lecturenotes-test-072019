@@ -16,7 +16,7 @@
                     <div class="col-md-12">
                     <div class="alert alert-success" role="alert" id="alert-message" style="display:none">
                     </div>
-                    <table id="table" data-source="<?= site_url('customer/ajaxGetCustomerList') ?>" data-module="customer">
+                    <table id="" class="table" data-source="" data-module="customer">
                         <thead>
                             <tr>
                                 <th>SR</th>
@@ -30,7 +30,24 @@
                         <tbody>
                             <?php
                             if (!empty($todays)) {
+                                $sr = 0;
+                                foreach ($todays as $idata) {
+                                    $sr++;
+                                    ?>
+                                    <tr>
+                                        <td><?= $sr ?></td>
+                                        <td><?= $idata['fullname'] ?>,<br><?= $idata['emailid'] ?>, <?= $idata['phone'] ?></td>
+                                        <td><?= $idata['address'] ?></td>
+                                        <td><?= date('d/m/Y h:i A', strtotime($idata['created_on'])) ?></td>
+                                        <td><?= $idata['description'] ?></td>
+                                        <td><?= $idata['next_act_description'] ?><br><small>Next Activity: 
+                                        <?php if ($idata['next_time'] != '0000-00-00 00:00:00') {
+                                            echo date('d/m/Y h:i A', strtotime($idata['next_time']));
+                                        } ?></small></td>
+                                    </tr>
+                                    <?php
 
+                                }
                             } else {
 
                             }
@@ -39,15 +56,7 @@
                         </table>
                     </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <nav>
-                                <ul class="pagination pagination-lg" id="paging"  data-source="<?= site_url('customer/ajaxGetCustomerListPaging') ?>">
-                                    
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
