@@ -8,5 +8,9 @@ class MY_Controller extends CI_Controller
         $this->data['submodule'] = 'Dashboard';
         $this->data['page'] = 'Dashboard';
     }
+    function response($arr = array())
+    {
+        die(json_encode($arr));
+    }
 
 }

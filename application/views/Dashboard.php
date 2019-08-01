@@ -20,14 +20,21 @@
                         <thead>
                             <tr>
                                 <th>SR</th>
-                                <th>Full Name</th>
-                                <th>Email ID</th>
-                                <th>Phone</th>
+                                <th>Customer</th>
                                 <th>Address</th>
-                                <th>Action</th>
+                                <th>Log date</th>
+                                <th>Description</th>
+                                <th>Activity</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <?php
+                            if (!empty($todays)) {
+
+                            } else {
+
+                            }
+                            ?>
                         </tbody>
                         </table>
                     </div>

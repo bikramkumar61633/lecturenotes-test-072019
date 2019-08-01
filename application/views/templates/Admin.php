@@ -46,140 +46,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/table-style.css" />
 <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/basictable.css" />
 <script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.basictable.min.js"></script>
+<script type="text/javascript">
+var base_url='<?= base_url(); ?>';
+</script>
 </head>
 <body class="dashboard-page">
 
 	<nav class="main-menu">
 		<ul>
 			<li>
-				<a href="index.html">
+				<a href="<?= site_url('dashboard') ?>">
 					<i class="fa fa-home nav_icon"></i>
 					<span class="nav-text">
 					Dashboard
 					</span>
 				</a>
-			</li>
-			<li class="has-subnav">
-				<a href="javascript:;">
-				<i class="fa fa-cogs" aria-hidden="true"></i>
-				<span class="nav-text">
-					UI Components
-				</span>
-				<i class="icon-angle-right"></i><i class="icon-angle-down"></i>
-				</a>
-				<ul>
-					<li>
-					<a class="subnav-text" href="buttons.html">
-					Buttons
-					</a>
-					</li>
-					<li>
-					<a class="subnav-text" href="grids.html">
-					Grids
-					</a>
-					</li>
-				</ul>
-			</li>
-			<li class="has-subnav">
-				<a href="javascript:;">
-				<i class="fa fa-check-square-o nav_icon"></i>
-				<span class="nav-text">
-				Forms
-				</span>
-				<i class="icon-angle-right"></i><i class="icon-angle-down"></i>
-				</a>
-				<ul>
-					<li>
-						<a class="subnav-text" href="inputs.html">Inputs</a>
-					</li>
-					<li>
-						<a class="subnav-text" href="validation.html">Form Validation</a>
-					</li>
-				</ul>
-			</li>
-			<li class="has-subnav">
-				<a href="javascript:;">
-					<i class="fa fa-file-text-o nav_icon"></i>
-						<span class="nav-text">Pages</span>
-					<i class="icon-angle-right"></i><i class="icon-angle-down"></i>
-				</a>
-				<ul>
-					<li>
-						<a class="subnav-text" href="gallery.html">
-							Image Gallery
-						</a>
-					</li>
-					<li>
-						<a class="subnav-text" href="calendar.html">
-							Calendar
-						</a>
-					</li>
-					<li>
-						<a class="subnav-text" href="signup.html">
-							Sign Up Page
-						</a>
-					</li>
-					<li>
-						<a class="subnav-text" href="login.html">
-							Login Page
-						</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="charts.html">
-					<i class="fa fa-bar-chart nav_icon"></i>
+            </li>
+            <li>
+				<a href="<?= site_url('customer') ?>">
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
 					<span class="nav-text">
-						Charts
+					Customers
 					</span>
 				</a>
-			</li>
-			<li>
-				<a href="typography.html">
-					<i class="icon-font nav-icon"></i>
+            </li>
+            <li>
+				<a href="<?= site_url('activities') ?>">
+                    <i class="fa fa-file-text-o nav_icon"></i>
 					<span class="nav-text">
-					Typography
+					Activities
 					</span>
 				</a>
-			</li>
-			<li>
-				<a href="tables.html">
-					<i class="icon-table nav-icon"></i>
-					<span class="nav-text">
-					Tables
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="maps.html">
-					<i class="fa fa-map-marker" aria-hidden="true"></i>
-					<span class="nav-text">
-					Maps
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="error.html">
-					<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-					<span class="nav-text">
-					Error Page
-					</span>
-				</a>
-			</li>
-			<li class="has-subnav">
-				<a href="javascript:;">
-					<i class="fa fa-list-ul" aria-hidden="true"></i>
-					<span class="nav-text">Extras</span>
-					<i class="icon-angle-right"></i><i class="icon-angle-down"></i>
-				</a>
-				<ul>
-					<li>
-						<a class="subnav-text" href="faq.html">FAQ</a>
-					</li>
-					<li>
-						<a class="subnav-text" href="blank.html">Blank Page</a>
-					</li>
-				</ul>
 			</li>
 		</ul>
 		<ul class="logout">
@@ -202,7 +99,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</nav>
 		<section class="title-bar">
 			<div class="logo">
-				<h1><a href="index.html"><img src="images/logo.png" alt="" />Colored</a></h1>
+				<h1><a href="index.html"><img src="images/logo.png" alt="" /><?= APPLICATIONNAME ?></a></h1>
 			</div>
 			<div class="full-screen">
 				<section class="full-top">
@@ -385,7 +282,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- //footer -->
 	</section>
 	<script src="<?= base_url() ?>assets/js/bootstrap.js"></script>
-	<script src="<?= base_url() ?>assets/js/proton.js"></script>
+    <script src="<?= base_url() ?>assets/js/proton.js"></script>
+    <script src="<?= base_url() ?>assets/app/app.js"></script>
 </body>
 </html>
-.
